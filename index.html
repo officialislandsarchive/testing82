@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islands Inventory Catalog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Islands Inventory Catalog</div>
+            <ul class="nav-links">
+                <li><button class="btn" onclick="openModal('crops')">Crops</button></li>
+                <li><button class="btn" onclick="openModal('blocks')">Blocks</button></li>
+                <li><button class="btn" onclick="openModal('totems')">Totems</button></li>
+                <li><button class="btn" onclick="openModal('industrial')">Industrial</button></li>
+                <li><button class="btn" onclick="openModal('stations')">Stations</button></li>
+                <li><button class="btn" onclick="openModal('cooking')">Cooking</button></li>
+                <li><button class="btn" onclick="openModal('seeds')">Seeds</button></li>
+                <li><button class="btn" onclick="openModal('slimeIsland')">Slime Island</button></li>
+                <li><button class="btn" onclick="openModal('tools')">Tools</button></li>
+                <li><button class="btn" onclick="openModal('ore')">Ore</button></li>
+                <li><button class="btn discord" onclick="window.location.href='https://discord.gg/y8zgDYQUg2'">Join our Discord</button></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+                <button id="search" class="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalItems"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
